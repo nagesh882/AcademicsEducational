@@ -154,3 +154,15 @@ def campus(request):
     }
 
     return HttpResponse(template.render(context))
+
+
+def clients(request):
+    template = loader.get_template("clients.html")
+    
+    user_list = User.objects.all().values()
+
+    context = {
+        "user_list":user_list
+    }
+
+    return HttpResponse(template.render(context))
