@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-  <title>Academics &mdash; Website by Colorlib</title>
+  <title>Academics</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -89,8 +89,8 @@
             <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a>
           </div>
           <div class="col-lg-3 text-right">
-            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
-            <a href="register.html" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span>
+            <a href="{% url 'login' %}" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
+            <a href="{% url 'register' %}" class="small btn btn-primary px-4 py-2 rounded-0"><span class="icon-users"></span>
               Register</a>
           </div>
         </div>
@@ -101,7 +101,7 @@
       <div class="container">
         <div class="d-flex align-items-center">
           <div class="site-logo">
-            <a href="index.html" class="d-block">
+            <a href="{% url 'index' %}" class="d-block">
               <img src="{% static 'images/logo.jpg' %}" alt="Image" class="img-fluid">
             </a>
           </div>
@@ -109,7 +109,7 @@
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li class="action">
-                  <a href="index.html" class="nav-link text-left">Home</a>
+                  <a href="{% url 'index' %}" class="nav-link text-left">Home</a>
                 </li>
                 <li class="has-children">
                   <a href="#" class="nav-link text-left">All Courses</a>
@@ -118,7 +118,7 @@
                       <a href="#" class="nav-link text-left">Programming Languages</a>
                       <ul class="dropdown">
                         <li><a href="#">Java</a></li>
-                        <li><a href="python.html">Python</a></li>
+                        <li><a href="{% url 'python' %}">Python</a></li>
                       </ul>
                     </li>
                     <li class="has-children">
@@ -166,17 +166,17 @@
                 <li class="has-children">
                   <a href="#" class="nav-link text-left">Jobs</a>
                   <ul class="dropdown">
-                    <li><a href="news-single.html">Freshers Jobs</a></li>
-                    <li><a href="experence.html">Experience Jobs</a></li>
+                    <li><a href="{% url 'news-single' %}">Freshers Jobs</a></li>
+                    <li><a href="{% url 'experence' %}">Experience Jobs</a></li>
                   </ul>
                 </li>
                 <li class="has-children">
                   <a href="#" class="nav-link text-left">Placement</a>
                   <ul class="dropdown">
-                    <li><a href="fplace.html">Freshers Placement</a></li>
-                    <li><a href="eplace.html">Experienced Placement</a></li>
-                    <li><a href="tens.html">Testimonial</a></li>
-                    <li><a href="campus.html">Drives Cyber Success</a></li>
+                    <li><a href="{% url 'fplace' %}">Freshers Placement</a></li>
+                    <li><a href="{% url 'eplace' %}">Experienced Placement</a></li>
+                    <li><a href="{% url 'tens' %}">Testimonial</a></li>
+                    <li><a href="{% url 'campus' %}">Drives Cyber Success</a></li>
                   </ul>
                 </li>
 
@@ -419,21 +419,6 @@
               <div class="gmap_canvas"><iframe
                   src="https://maps.google.com/maps?q=%20%20ISKCON%20NVCC%20Pune&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
                   frameborder="0" scrolling="no" style="width: 250px; height: 450;"></iframe></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <div class="copyright">
-              <p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made
-                with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                  target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              </p>
             </div>
           </div>
         </div>
