@@ -120,7 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-	BASE_DIR / 'Users' / 'static',
+	BASE_DIR / 'users' / 'static',
     
 	BASE_DIR / 'new_users' / 'static',
 ]
